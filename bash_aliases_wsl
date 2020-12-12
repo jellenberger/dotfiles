@@ -1,0 +1,4 @@
+alias goproj="cd ~/projects"
+alias gohome="cd ~/"
+alias godesk="cd /mnt/c/Users/$USER/Desktop"
+
