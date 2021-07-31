@@ -41,10 +41,10 @@
 
 ;; load theme
 
-(use-package zenburn-theme
+(use-package monokai-theme
   :ensure t
   :config
-  (load-theme 'zenburn t))
+  (load-theme 'monokai t))
 
 
 ;; clean up some visual clutter
