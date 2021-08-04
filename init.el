@@ -220,7 +220,15 @@
   (add-hook 'cider-mode-hook #'company-mode))
 
 
+;; markdown
 
+(use-package markdown-mode
+  :ensure t
+  :config
+  (add-hook 'markdown-mode-hook 'visual-line-mode)
+  (add-hook 'markdown-mode-hook 'as/markdown-config)
+  (defun as/markdown-config ()
+    (local-set-key (kbd "M-q") 'ignore)))
 
 
 
