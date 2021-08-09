@@ -1,5 +1,6 @@
 pip
 cryptography
+pipenv
 docker-compose
 youtube-dl
 magic-wormhole
