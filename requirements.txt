@@ -1,0 +1,5 @@
+pip
+cryptography
+docker-compose
+youtube-dl
+magic-wormhole
