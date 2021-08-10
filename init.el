@@ -31,20 +31,15 @@
   (package-install 'use-package))
 
 (eval-when-compile
-  (require 'use-package))(add-hook 'cider-repl-mode-hook #'subword-mode)
-(add-hook 'cider-repl-mode-hook #'smartparens-strict-mode)
-(add-hook 'cider-repl-mode-hook #'rainbow-delimiters-mode)
-(add-hook 'cider-repl-mode-hook #'aggressive-indent-mode)
-(add-hook 'cider-repl-mode-hook #'company-mode)
-(add-hook 'cider-mode-hook #'company-mode)
+  (require 'use-package))
 
 
 ;; load theme
 
-(use-package monokai-theme
+(use-package material-theme
   :ensure t
   :config
-  (load-theme 'monokai t))
+  (load-theme 'material t))
 
 
 ;; clean up some visual clutter
@@ -219,6 +214,15 @@
   (add-hook 'cider-repl-mode-hook #'company-mode)
   (add-hook 'cider-mode-hook #'company-mode)
   (setq tab-always-indent 'complete))
+
+
+;; python
+
+(use-package elpy
+  :ensure t
+  :defer t
+  :init
+  (advice-add 'python-mode :before 'elpy-enable))
 
 
 ;; markdown
