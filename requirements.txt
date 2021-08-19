@@ -4,3 +4,5 @@ pipenv
 docker-compose
 youtube-dl
 magic-wormhole
+flake8
+black
