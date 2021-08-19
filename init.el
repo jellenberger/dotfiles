@@ -36,10 +36,10 @@
 
 ;; load theme
 
-(use-package material-theme
+(use-package monokai-theme
   :ensure t
   :config
-  (load-theme 'material t))
+  (load-theme 'monokai t))
 
 
 ;; clean up some visual clutter
