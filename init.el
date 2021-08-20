@@ -44,10 +44,12 @@
 
 ;; clean up some visual clutter
 
-;;(menu-bar-mode -1)
+(menu-bar-mode -1)
 (toggle-scroll-bar -1)
 (tool-bar-mode -1)
 ;;(blink-cursor-mode -1)
+(setq inhibit-startup-screen t)
+(setq initial-scratch-message "")
 
 
 ;; add some visual helpers
@@ -63,11 +65,6 @@
 ;; set editing stuff
 
 (setq-default indent-tabs-mode nil)
-
-
-;; turn off startup screen
-
-(setq inhibit-startup-screen t)
 
 
 ;; show file path in title bar
